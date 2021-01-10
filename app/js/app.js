@@ -6,7 +6,6 @@ const weatherIcon = document.getElementById("weather-icon");
 const cityName = document.getElementById('cityName');
 const weatherCondition = document.getElementById('weather-condition');
 const temp = document.getElementById('temp');
-const key = 'FYGiKpRWuGTA3FI1ei9wTY9DQw0NJuGA';
 
 // Show card
 const showCard = () =>{
