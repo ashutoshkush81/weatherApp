@@ -35,14 +35,14 @@ const updateUI = (data) => {
     // find either it is day or night and then update the img src 
     let timeSrc = null;
     if (weather.IsDayTime) {
-        timeSrc = '/img/day.svg';
+        timeSrc = 'img/day.svg';
     } else {
-        timeSrc = '/img/night.svg';
+        timeSrc = 'img/night.svg';
     }
     dayOrNightTimeImg.setAttribute('src', timeSrc);
 
     // Set icons according to the weatherIcon number
-    const iconNumber = `/img/icons/${weather.WeatherIcon}.svg`;
+    const iconNumber = `img/icons/${weather.WeatherIcon}.svg`;
     weatherIcon.setAttribute('src',iconNumber);
 
     cityName.innerText = cityDesc.EnglishName;
