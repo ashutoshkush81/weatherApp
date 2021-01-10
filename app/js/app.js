@@ -64,7 +64,7 @@ const updateCity = async (city) => {
         cityDesc: cityDesc,
         weather: weather
     };
-
+    showCard();
     // Another sorthand notation of will be return {cityDesc,weather};
 };
 
