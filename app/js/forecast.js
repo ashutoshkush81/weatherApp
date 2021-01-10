@@ -1,4 +1,5 @@
 
+const key = 'FYGiKpRWuGTA3FI1ei9wTY9DQw0NJuGA';
 // Get weather info (like day or night, sunny or cloudy and temp..) from given city id.
 const getWeather = async (id) =>{
     const resourceUrl = `http://dataservice.accuweather.com/currentconditions/v1/${id}`;
