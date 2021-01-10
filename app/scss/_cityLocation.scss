@@ -1,0 +1,17 @@
+@import './variable';
+.city-location {
+  padding: 4px;
+  font-size: 2rem;
+  input {
+    padding: 8px;
+    margin:10px 0;
+    border: 0;
+    box-shadow: $boxShadow1;
+    border-radius:10px;
+    width:100%;
+    font-family:inherit;
+    font-size: inherit;
+  }
+}
+
+

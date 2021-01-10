@@ -1,0 +1,43 @@
+@import "./variable";
+
+@mixin font {
+  font-size: 2rem;
+  background: $textColor;
+  color: $backgroundColor;
+  font-family: $fontFamily;
+  font-weight: bold;
+  text-transform: uppercase;
+  gap: 1.3rem;
+}
+
+.card {
+  @include font();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: $boxShadow1;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    transform: translateY(1rem);
+    box-shadow: 2px 3px 18px rgba(255, 255, 255, 0.4);
+  }
+  .temp{
+      font-size: 4rem;
+  }
+}
+
+.icon{
+  margin-top: -50px;
+  width: 150;
+  background-color: darkgreen;
+}
+
+.displayHidden{
+  display: none;
+}

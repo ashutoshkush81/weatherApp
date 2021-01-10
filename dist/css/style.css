@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  max-width: 400px;
+  min-height: 100vh;
+  background-color: #0a192f;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2364ffda' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #e6f1ff;
+  font-family: "Patua One", "sans-serif";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tittleName {
+  font-size: 4rem;
+  font-weight: 700px;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  -webkit-animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+          animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+  left: 8px;
+  -webkit-animation-delay: -0.24s;
+          animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+  left: 32px;
+  -webkit-animation-delay: -0.12s;
+          animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+  left: 56px;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+@keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.city-location {
+  padding: 4px;
+  font-size: 2rem;
+}
+
+.city-location input {
+  padding: 8px;
+  margin: 10px 0;
+  border: 0;
+  -webkit-box-shadow: 3px 2px 14px rgba(255, 255, 255, 0.2);
+          box-shadow: 3px 2px 14px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.card {
+  font-size: 2rem;
+  background: #e6f1ff;
+  color: #0a192f;
+  font-family: "Patua One", "sans-serif";
+  font-weight: bold;
+  text-transform: uppercase;
+  gap: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 2px 14px rgba(255, 255, 255, 0.2);
+          box-shadow: 3px 2px 14px rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  -webkit-box-shadow: 2px 3px 18px rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 3px 18px rgba(255, 255, 255, 0.4);
+}
+
+.card .temp {
+  font-size: 4rem;
+}
+
+.icon {
+  margin-top: -50px;
+  width: 150;
+  background-color: darkgreen;
+}
+
+.displayHidden {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  h1.tittleName {
+    font-size: 2rem;
+  }
+  form.city-location {
+    font-size: 1.5rem;
+  }
+  .temp {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

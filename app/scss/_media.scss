@@ -1,0 +1,12 @@
+@import './variable';
+@media screen and (max-width : 1000px){
+    h1.tittleName{
+        font-size: 2rem;
+    }
+    form.city-location{
+        font-size: 1.5rem;
+    }
+    .temp{
+        font-size: 2.5rem;
+    }
+}

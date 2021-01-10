@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="tittleName" id="tittleName">Weather App</h1>
+      <form class="city-location" id="city-location">
+        <label for="city">Enter a location for weather information</label><br/>
+        <input type="text" name="city" id="city" placeholder="Delhi"/>
+      </form>
+
+      <div class="card displayHidden" id='card'>
+          <!-- Insert Image according to day or night. -->
+          <img src="https://via.placeholder.com/400x300" class="time" id="time">
+          <!-- Icon of the weather conditions -->
+          <img src="" alt="" class="icon" id="weather-icon">
+          <div class="cityName" id='cityName'></div>
+          <div class="weather-condition" id='weather-condition'></div>
+          <div class="temp" >
+              <span id = "temp"></span>
+              <span>&deg;C</span>
+          </div>
+      </div>
+      <!--  Add loader class -->
+      <div class="loader displayHidden" id='loader'><div></div><div></div><div></div></div>
+
+      <!-- Initially both loader as well as card will be hidden.. -->
+
+    </div>
+    <script src="./app/js/forecast.js"></script>
+    <script src="./app/js/app.js"></script>
+  </body>
+</html>
