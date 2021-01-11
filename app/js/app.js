@@ -83,5 +83,16 @@ userInput.addEventListener('submit', city => {
     }).catch(err => {
         console.log(err);
     });
+
+    // Store into local storage
+    localStorage.setItem('city',name);
     
 });
+
+if(localStorage.getItem('city')){
+    updateCity(localStorage.getItem('city')).then(data =>{
+        updateUI(data);
+    }).catch(err =>{
+        console.log(err);
+    })
+}
